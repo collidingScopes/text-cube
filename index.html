@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Text Cube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="controls">
+        <div class="input-group">
+            <label for="face-front">Front:</label>
+            <input type="text" id="face-front" value="this is not a cube">
+        </div>
+        <div class="input-group">
+            <label for="face-back">Back:</label>
+            <input type="text" id="face-back" value="you can just do things">
+        </div>
+        <div class="input-group">
+            <label for="face-top">Top:</label>
+            <input type="text" id="face-top" value="hello world">
+        </div>
+        <div class="input-group">
+            <label for="face-bottom">Bottom:</label>
+            <input type="text" id="face-bottom" value="don't be a square">
+        </div>
+        <div class="input-group">
+            <label for="face-left">Left:</label>
+            <input type="text" id="face-left" value="you are what you vibe">
+        </div>
+        <div class="input-group">
+            <label for="face-right">Right:</label>
+            <input type="text" id="face-right" value="@threejs">
+        </div>
+        
+        <div class="face-colors">
+            <div class="section-label">Cube Color</div>
+            <input type="color" id="face-color-picker" class="color-picker" value="#ffffff">
+        </div>
+        
+        <div class="text-colors">
+            <div class="section-label">Text Color</div>
+            <input type="color" id="text-color-picker" class="color-picker" value="#0000FF">
+        </div>
+        
+        <div class="wireframe-controls">
+            <div class="switch-container">
+                <span class="section-label">Borders</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="wireframe-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <input type="color" id="border-color-picker" class="color-picker" value="#999999">
+        </div>
+        
+        <div class="font-selection">
+            <div class="section-label">Font</div>
+            <select id="font-select" class="font-select">
+                <option value="Helvetica" selected>Helvetica</option>
+                <option value="monospace">Monospace</option>
+                <option value="sans-serif">Sans-serif</option>
+                <option value="serif">Serif</option>
+                <option value="Arial">Arial</option>
+                <option value="'Courier New', monospace">Courier</option>
+            </select>
+        </div>
+        
+        <button id="randomize-alignment">RANDOM ALIGN</button>
+        
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+</html>
